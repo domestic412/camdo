@@ -1,5 +1,7 @@
-import 'package:camdo_test/page/lap_bien_nhan/lap_bien_nhan.dart';
+import 'lap_bien_nhan/lap_bien_nhan.dart';
 import 'package:flutter/material.dart';
+
+import 'quan_ly_bien_nhan/quan_ly_bien_nhan.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -17,25 +19,22 @@ class _HomePageState extends State<HomePage> {
           appBar: AppBar(
             title: const TabBar(tabs: [
               Tab(
-                text: 'Tab 1',
-                icon: Icon(Icons.abc_outlined),
+                text: 'Lập biên nhận',
+                icon: Icon(Icons.add_box),
               ),
               Tab(
-                text: 'Tab 2',
+                text: 'Quản lí biên nhận',
+                icon: Icon(Icons.folder_copy),
               ),
               Tab(
-                text: 'Tab 3',
+                text: 'Thống kê',
+                icon: Icon(Icons.format_align_left),
               ),
             ]),
           ),
-          body: const TabBarView(children: [
+          body: TabBarView(children: [
             LapBienNhan(),
-            Center(
-              child: Text(
-                'Page 2',
-                style: TextStyle(fontSize: 30),
-              ),
-            ),
+            QuanLyBienNhan(),
             Center(
               child: Text(
                 'Page 3',

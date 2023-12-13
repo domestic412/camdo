@@ -3,30 +3,30 @@ import 'package:camdo_test/constains/size.dart';
 import 'package:camdo_test/constains/style.dart';
 import 'package:flutter/material.dart';
 
-class LapBienNhan extends StatefulWidget {
-  const LapBienNhan({super.key});
+class QuanLyBienNhan extends StatefulWidget {
+  const QuanLyBienNhan({super.key});
 
   @override
-  State<LapBienNhan> createState() => _LapBienNhanState();
+  State<QuanLyBienNhan> createState() => _QuanLyBienNhanState();
 }
 
-class _LapBienNhanState extends State<LapBienNhan> {
+class _QuanLyBienNhanState extends State<QuanLyBienNhan> {
   var maBienNhan = TextEditingController();
-  var ngayCam = TextEditingController();
-  var hoTen = TextEditingController();
-  var cccd = TextEditingController();
-  var sdt = TextEditingController();
-  var diaChi = TextEditingController();
-  var ngayCap = TextEditingController();
-  var noiCap = TextEditingController();
-  var monHang = TextEditingController();
-  var tongSoMonHang = TextEditingController();
-  var moTa = TextEditingController();
-  var triGia = TextEditingController();
-  var vangHot = TextEditingController();
-  var Hot = TextEditingController();
-  var tienCam = TextEditingController();
-  var ngayQuaHan = TextEditingController();
+  // var ngayCam = TextEditingController();
+  // var hoTen = TextEditingController();
+  // var cccd = TextEditingController();
+  // var sdt = TextEditingController();
+  // var diaChi = TextEditingController();
+  // var ngayCap = TextEditingController();
+  // var noiCap = TextEditingController();
+  // var monHang = TextEditingController();
+  // var tongSoMonHang = TextEditingController();
+  // var moTa = TextEditingController();
+  // var triGia = TextEditingController();
+  // var vangHot = TextEditingController();
+  // var Hot = TextEditingController();
+  // var tienCam = TextEditingController();
+  // var ngayQuaHan = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -40,7 +40,7 @@ class _LapBienNhanState extends State<LapBienNhan> {
           child: Column(
             children: [
               Text(
-                'Lập Biên Nhận',
+                'Quản lý Biên Nhận',
                 style: title_style,
               ),
               Container(
@@ -81,10 +81,20 @@ class _LapBienNhanState extends State<LapBienNhan> {
                             style: text_style,
                           ),
                         ),
-                        SizedBox(
+                        Container(
                           width: size400,
-                          child: TextField(
-                              controller: ngayCam, decoration: inputDecoration),
+                          padding: EdgeInsets.all(2),
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black54),
+                            borderRadius: BorderRadius.circular(5),
+                            color: lightGrey,
+                          ),
+                          child: Text(
+                            '',
+                            style:
+                                TextStyle(fontSize: 15, color: Colors.black54),
+                          ),
                         )
                       ],
                     )
@@ -113,11 +123,20 @@ class _LapBienNhanState extends State<LapBienNhan> {
                                     style: text_style,
                                   ),
                                 ),
-                                SizedBox(
+                                Container(
                                   width: size300,
-                                  child: TextField(
-                                      controller: hoTen,
-                                      decoration: inputDecoration),
+                                  padding: EdgeInsets.all(2),
+                                  alignment: Alignment.center,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.black54),
+                                    borderRadius: BorderRadius.circular(5),
+                                    color: lightGrey,
+                                  ),
+                                  child: Text(
+                                    '',
+                                    style: TextStyle(
+                                        fontSize: 15, color: Colors.black54),
+                                  ),
                                 )
                               ],
                             ),
@@ -133,11 +152,20 @@ class _LapBienNhanState extends State<LapBienNhan> {
                                     style: text_style,
                                   ),
                                 ),
-                                SizedBox(
+                                Container(
                                   width: size300,
-                                  child: TextField(
-                                      controller: cccd,
-                                      decoration: inputDecoration),
+                                  padding: EdgeInsets.all(2),
+                                  alignment: Alignment.center,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.black54),
+                                    borderRadius: BorderRadius.circular(5),
+                                    color: lightGrey,
+                                  ),
+                                  child: Text(
+                                    '',
+                                    style: TextStyle(
+                                        fontSize: 15, color: Colors.black54),
+                                  ),
                                 )
                               ],
                             ),
@@ -160,11 +188,20 @@ class _LapBienNhanState extends State<LapBienNhan> {
                                 SizedBox(
                                   width: 20,
                                 ),
-                                SizedBox(
+                                Container(
                                   width: size300,
-                                  child: TextField(
-                                      controller: sdt,
-                                      decoration: inputDecoration),
+                                  padding: EdgeInsets.all(2),
+                                  alignment: Alignment.center,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.black54),
+                                    borderRadius: BorderRadius.circular(5),
+                                    color: lightGrey,
+                                  ),
+                                  child: Text(
+                                    '',
+                                    style: TextStyle(
+                                        fontSize: 15, color: Colors.black54),
+                                  ),
                                 )
                               ],
                             ),
@@ -183,11 +220,20 @@ class _LapBienNhanState extends State<LapBienNhan> {
                                 SizedBox(
                                   width: 20,
                                 ),
-                                SizedBox(
+                                Container(
                                   width: size300,
-                                  child: TextField(
-                                      controller: ngayCap,
-                                      decoration: inputDecoration),
+                                  padding: EdgeInsets.all(2),
+                                  alignment: Alignment.center,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.black54),
+                                    borderRadius: BorderRadius.circular(5),
+                                    color: lightGrey,
+                                  ),
+                                  child: Text(
+                                    '',
+                                    style: TextStyle(
+                                        fontSize: 15, color: Colors.black54),
+                                  ),
                                 )
                               ],
                             ),
@@ -205,11 +251,20 @@ class _LapBienNhanState extends State<LapBienNhan> {
                                     style: text_style,
                                   ),
                                 ),
-                                SizedBox(
-                                  width: 300,
-                                  child: TextField(
-                                      controller: diaChi,
-                                      decoration: inputDecoration),
+                                Container(
+                                  width: size300,
+                                  padding: EdgeInsets.all(2),
+                                  alignment: Alignment.center,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.black54),
+                                    borderRadius: BorderRadius.circular(5),
+                                    color: lightGrey,
+                                  ),
+                                  child: Text(
+                                    '',
+                                    style: TextStyle(
+                                        fontSize: 15, color: Colors.black54),
+                                  ),
                                 )
                               ],
                             ),
@@ -223,11 +278,20 @@ class _LapBienNhanState extends State<LapBienNhan> {
                                     style: text_style,
                                   ),
                                 ),
-                                SizedBox(
+                                Container(
                                   width: size300,
-                                  child: TextField(
-                                      controller: noiCap,
-                                      decoration: inputDecoration),
+                                  padding: EdgeInsets.all(2),
+                                  alignment: Alignment.center,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.black54),
+                                    borderRadius: BorderRadius.circular(5),
+                                    color: lightGrey,
+                                  ),
+                                  child: Text(
+                                    '',
+                                    style: TextStyle(
+                                        fontSize: 15, color: Colors.black54),
+                                  ),
                                 )
                               ],
                             ),
@@ -279,11 +343,19 @@ class _LapBienNhanState extends State<LapBienNhan> {
                             style: text_style,
                           ),
                         ),
-                        SizedBox(
+                        Container(
                           width: size500,
-                          child: TextField(
-                            controller: monHang,
-                            decoration: inputDecoration,
+                          padding: EdgeInsets.all(2),
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black54),
+                            borderRadius: BorderRadius.circular(5),
+                            color: lightGrey,
+                          ),
+                          child: Text(
+                            '',
+                            style:
+                                TextStyle(fontSize: 15, color: Colors.black54),
                           ),
                         ),
                         SizedBox(
@@ -296,13 +368,21 @@ class _LapBienNhanState extends State<LapBienNhan> {
                             style: text_style,
                           ),
                         ),
-                        SizedBox(
-                          width: size70,
-                          child: TextField(
-                            controller: tongSoMonHang,
-                            decoration: inputDecoration,
+                        Container(
+                          width: size50,
+                          padding: EdgeInsets.all(2),
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black54),
+                            borderRadius: BorderRadius.circular(5),
+                            color: lightGrey,
                           ),
-                        ),
+                          child: Text(
+                            '',
+                            style:
+                                TextStyle(fontSize: 15, color: Colors.black54),
+                          ),
+                        )
                       ],
                     ),
                     SizedBox(height: 10),
@@ -315,15 +395,21 @@ class _LapBienNhanState extends State<LapBienNhan> {
                             style: text_style,
                           ),
                         ),
-                        SizedBox(
+                        Container(
                           width: size1700,
-                          child: TextField(
-                            controller: moTa,
-                            decoration: inputDecoration,
-                            minLines: 1,
-                            maxLines: 4,
+                          padding: EdgeInsets.all(2),
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black54),
+                            borderRadius: BorderRadius.circular(5),
+                            color: lightGrey,
                           ),
-                        ),
+                          child: Text(
+                            '',
+                            style:
+                                TextStyle(fontSize: 15, color: Colors.black54),
+                          ),
+                        )
                       ],
                     ),
                     SizedBox(height: 10),
@@ -336,11 +422,19 @@ class _LapBienNhanState extends State<LapBienNhan> {
                             style: text_style,
                           ),
                         ),
-                        SizedBox(
+                        Container(
                           width: size500,
-                          child: TextField(
-                            controller: triGia,
-                            decoration: inputDecoration,
+                          padding: EdgeInsets.all(2),
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black54),
+                            borderRadius: BorderRadius.circular(5),
+                            color: lightGrey,
+                          ),
+                          child: Text(
+                            '',
+                            style:
+                                TextStyle(fontSize: 15, color: Colors.black54),
                           ),
                         ),
                         SizedBox(
@@ -356,11 +450,19 @@ class _LapBienNhanState extends State<LapBienNhan> {
                         SizedBox(
                           width: 5,
                         ),
-                        SizedBox(
-                          width: size70,
-                          child: TextField(
-                            controller: vangHot,
-                            decoration: inputDecoration,
+                        Container(
+                          width: size50,
+                          padding: EdgeInsets.all(2),
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black54),
+                            borderRadius: BorderRadius.circular(5),
+                            color: lightGrey,
+                          ),
+                          child: Text(
+                            '',
+                            style:
+                                TextStyle(fontSize: 15, color: Colors.black54),
                           ),
                         ),
                         SizedBox(
@@ -373,13 +475,21 @@ class _LapBienNhanState extends State<LapBienNhan> {
                             style: text_style,
                           ),
                         ),
-                        SizedBox(
-                          width: size70,
-                          child: TextField(
-                            controller: Hot,
-                            decoration: inputDecoration,
+                        Container(
+                          width: size50,
+                          padding: EdgeInsets.all(2),
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black54),
+                            borderRadius: BorderRadius.circular(5),
+                            color: lightGrey,
                           ),
-                        ),
+                          child: Text(
+                            '',
+                            style:
+                                TextStyle(fontSize: 15, color: Colors.black54),
+                          ),
+                        )
                       ],
                     ),
                     SizedBox(height: 10),
@@ -392,13 +502,21 @@ class _LapBienNhanState extends State<LapBienNhan> {
                             style: text_style,
                           ),
                         ),
-                        SizedBox(
+                        Container(
                           width: size500,
-                          child: TextField(
-                            controller: tienCam,
-                            decoration: inputDecoration,
+                          padding: EdgeInsets.all(2),
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black54),
+                            borderRadius: BorderRadius.circular(5),
+                            color: lightGrey,
                           ),
-                        ),
+                          child: Text(
+                            '',
+                            style:
+                                TextStyle(fontSize: 15, color: Colors.black54),
+                          ),
+                        )
                       ],
                     ),
                     SizedBox(height: 10),
@@ -463,11 +581,19 @@ class _LapBienNhanState extends State<LapBienNhan> {
                             style: text_style,
                           ),
                         ),
-                        SizedBox(
+                        Container(
                           width: size70,
-                          child: TextField(
-                            controller: ngayQuaHan,
-                            decoration: inputDecoration,
+                          padding: EdgeInsets.all(2),
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black54),
+                            borderRadius: BorderRadius.circular(5),
+                            color: lightGrey,
+                          ),
+                          child: Text(
+                            '',
+                            style:
+                                TextStyle(fontSize: 15, color: Colors.black54),
                           ),
                         ),
                         SizedBox(width: 10),
@@ -494,6 +620,7 @@ class _LapBienNhanState extends State<LapBienNhan> {
               Container(
                 padding: EdgeInsets.all(32),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     ElevatedButton(
                         onPressed: () {},
@@ -504,9 +631,9 @@ class _LapBienNhanState extends State<LapBienNhan> {
                               EdgeInsets.symmetric(vertical: 5, horizontal: 10),
                           child: Row(
                             children: [
-                              Icon(Icons.save),
-                              SizedBox(width: 5),
-                              Text('Luu', style: text_button_style),
+                              // Icon(Icons.save),
+                              // SizedBox(width: 5),
+                              Text('Chuoc do', style: text_button_style),
                             ],
                           ),
                         )),
@@ -540,9 +667,9 @@ class _LapBienNhanState extends State<LapBienNhan> {
                               EdgeInsets.symmetric(vertical: 5, horizontal: 10),
                           child: Row(
                             children: [
-                              Icon(Icons.save_as_outlined),
-                              SizedBox(width: 5),
-                              Text('Luu va In', style: text_button_style),
+                              // Icon(Icons.save_as_outlined),
+                              // SizedBox(width: 5),
+                              Text('Gia han', style: text_button_style),
                             ],
                           ),
                         )),
@@ -556,11 +683,9 @@ class _LapBienNhanState extends State<LapBienNhan> {
                                 vertical: 5, horizontal: 10),
                             child: Row(
                               children: [
-                                Icon(Icons.receipt),
-                                SizedBox(
-                                  width: 5,
-                                ),
-                                Text('Lam moi', style: text_button_style),
+                                // Icon(Icons.receipt),
+                                // SizedBox(width: 5),
+                                Text('Thanh ly', style: text_button_style),
                               ],
                             ))),
                   ],
