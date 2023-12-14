@@ -18,25 +18,25 @@ class LapBienNhan extends StatefulWidget {
 class _LapBienNhanState extends State<LapBienNhan> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: lightGrey,
-      height: deviceHeight(context),
-      child: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.all(32.0),
-          child: Column(
+    return Center(
+      child: Container(
+        color: lightGrey,
+        height: deviceHeight(context),
+        child: ListView(children: [
+          Column(
             children: [
+              SizedBox(height: 16),
               Text(
                 'Lập Biên Nhận',
                 style: title_style,
               ),
-              IdOrderWidget(),
-              InfoPersonWidget(),
-              InfoGoldWidget(),
-              ButtonOrder(),
+              IdOrderLBN(),
+              InfoPersonLBN(),
+              InfoGoldLBN(),
+              ButtonOrderLBN(),
             ],
           ),
-        ),
+        ]),
       ),
     );
   }

@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 
 TextStyle title_style = const TextStyle(fontSize: 30);
 TextStyle text_style = TextStyle(fontSize: 15, color: black);
+TextStyle text_heading_table_style =
+    TextStyle(fontSize: 15, color: black, fontWeight: FontWeight.bold);
 TextStyle text_button_style = TextStyle(fontSize: 15, color: white);
 
 InputDecoration inputDecoration = InputDecoration(

@@ -2,6 +2,7 @@ import 'lap_bien_nhan/lap_bien_nhan.dart';
 import 'package:flutter/material.dart';
 
 import 'quan_ly_bien_nhan/quan_ly_bien_nhan.dart';
+import 'thong_ke/thong_ke.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -35,12 +36,7 @@ class _HomePageState extends State<HomePage> {
           body: TabBarView(children: [
             LapBienNhan(),
             QuanLyBienNhan(),
-            Center(
-              child: Text(
-                'Page 3',
-                style: TextStyle(fontSize: 30),
-              ),
-            )
+            ThongKe(),
           ]),
         ));
   }

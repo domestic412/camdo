@@ -1,19 +1,17 @@
 import 'package:camdo_test/constains/color.dart';
 import 'package:camdo_test/constains/size.dart';
 import 'package:camdo_test/constains/style.dart';
-import 'package:camdo_test/page/lap_bien_nhan/controller/controller_order.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
-class IdOrderLBN extends StatefulWidget {
-  const IdOrderLBN({super.key});
+class IdOrderQLBN extends StatefulWidget {
+  const IdOrderQLBN({super.key});
 
   @override
-  State<IdOrderLBN> createState() => _IdOrderLBNState();
+  State<IdOrderQLBN> createState() => _IdOrderQLBNState();
 }
 
-class _IdOrderLBNState extends State<IdOrderLBN> {
-  final ctrl = Get.put(OrderController());
+class _IdOrderQLBNState extends State<IdOrderQLBN> {
+  var maBienNhan = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -40,8 +38,7 @@ class _IdOrderLBNState extends State<IdOrderLBN> {
                 SizedBox(
                   width: size400,
                   child: TextField(
-                      controller: ctrl.maBienNhan.value,
-                      decoration: inputDecoration),
+                      controller: maBienNhan, decoration: inputDecoration),
                 )
               ],
             ),
@@ -57,11 +54,19 @@ class _IdOrderLBNState extends State<IdOrderLBN> {
                     style: text_style,
                   ),
                 ),
-                SizedBox(
+                Container(
                   width: size400,
-                  child: TextField(
-                      controller: ctrl.ngayCam.value,
-                      decoration: inputDecoration),
+                  padding: EdgeInsets.all(2),
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black54),
+                    borderRadius: BorderRadius.circular(5),
+                    color: lightGrey,
+                  ),
+                  child: Text(
+                    '',
+                    style: TextStyle(fontSize: 15, color: Colors.black54),
+                  ),
                 )
               ],
             )

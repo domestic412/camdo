@@ -1,25 +1,25 @@
 import 'package:camdo_test/constains/color.dart';
 import 'package:camdo_test/constains/size.dart';
 import 'package:camdo_test/constains/style.dart';
-import 'package:camdo_test/page/lap_bien_nhan/controller/controller_order.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
-class InfoGoldLBN extends StatefulWidget {
-  const InfoGoldLBN({super.key});
+class InfoGoldQLBN extends StatefulWidget {
+  const InfoGoldQLBN({super.key});
 
   @override
-  State<InfoGoldLBN> createState() => _InfoGoldLBNState();
+  State<InfoGoldQLBN> createState() => _InfoGoldQLBNState();
 }
 
-class _InfoGoldLBNState extends State<InfoGoldLBN> {
-  final ctrl = Get.put(OrderController());
+class _InfoGoldQLBNState extends State<InfoGoldQLBN> {
   @override
   Widget build(BuildContext context) {
     return Container(
       width: 1850,
       padding: EdgeInsets.fromLTRB(32, 32, 0, 32),
-      decoration: BoxDecoration(border: Border.all(), color: white),
+      decoration: BoxDecoration(
+        border: Border.all(),
+        color: white,
+      ),
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Column(
@@ -60,11 +60,18 @@ class _InfoGoldLBNState extends State<InfoGoldLBN> {
                     style: text_style,
                   ),
                 ),
-                SizedBox(
+                Container(
                   width: size500,
-                  child: TextField(
-                    controller: ctrl.monHang.value,
-                    decoration: inputDecoration,
+                  padding: EdgeInsets.all(2),
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black54),
+                    borderRadius: BorderRadius.circular(5),
+                    color: lightGrey,
+                  ),
+                  child: Text(
+                    '',
+                    style: TextStyle(fontSize: 15, color: Colors.black54),
                   ),
                 ),
                 SizedBox(
@@ -77,13 +84,20 @@ class _InfoGoldLBNState extends State<InfoGoldLBN> {
                     style: text_style,
                   ),
                 ),
-                SizedBox(
-                  width: size70,
-                  child: TextField(
-                    controller: ctrl.tongSoMonHang.value,
-                    decoration: inputDecoration,
+                Container(
+                  width: size50,
+                  padding: EdgeInsets.all(2),
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black54),
+                    borderRadius: BorderRadius.circular(5),
+                    color: lightGrey,
                   ),
-                ),
+                  child: Text(
+                    '',
+                    style: TextStyle(fontSize: 15, color: Colors.black54),
+                  ),
+                )
               ],
             ),
             SizedBox(height: 10),
@@ -96,15 +110,20 @@ class _InfoGoldLBNState extends State<InfoGoldLBN> {
                     style: text_style,
                   ),
                 ),
-                SizedBox(
+                Container(
                   width: size1700,
-                  child: TextField(
-                    controller: ctrl.moTa.value,
-                    decoration: inputDecoration,
-                    minLines: 1,
-                    maxLines: 4,
+                  padding: EdgeInsets.all(2),
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black54),
+                    borderRadius: BorderRadius.circular(5),
+                    color: lightGrey,
                   ),
-                ),
+                  child: Text(
+                    '',
+                    style: TextStyle(fontSize: 15, color: Colors.black54),
+                  ),
+                )
               ],
             ),
             SizedBox(height: 10),
@@ -117,11 +136,18 @@ class _InfoGoldLBNState extends State<InfoGoldLBN> {
                     style: text_style,
                   ),
                 ),
-                SizedBox(
+                Container(
                   width: size500,
-                  child: TextField(
-                    controller: ctrl.triGia.value,
-                    decoration: inputDecoration,
+                  padding: EdgeInsets.all(2),
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black54),
+                    borderRadius: BorderRadius.circular(5),
+                    color: lightGrey,
+                  ),
+                  child: Text(
+                    '',
+                    style: TextStyle(fontSize: 15, color: Colors.black54),
                   ),
                 ),
                 SizedBox(
@@ -137,11 +163,18 @@ class _InfoGoldLBNState extends State<InfoGoldLBN> {
                 SizedBox(
                   width: 5,
                 ),
-                SizedBox(
-                  width: size70,
-                  child: TextField(
-                    controller: ctrl.vangHot.value,
-                    decoration: inputDecoration,
+                Container(
+                  width: size50,
+                  padding: EdgeInsets.all(2),
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black54),
+                    borderRadius: BorderRadius.circular(5),
+                    color: lightGrey,
+                  ),
+                  child: Text(
+                    '',
+                    style: TextStyle(fontSize: 15, color: Colors.black54),
                   ),
                 ),
                 SizedBox(
@@ -154,13 +187,20 @@ class _InfoGoldLBNState extends State<InfoGoldLBN> {
                     style: text_style,
                   ),
                 ),
-                SizedBox(
-                  width: size70,
-                  child: TextField(
-                    controller: ctrl.hot.value,
-                    decoration: inputDecoration,
+                Container(
+                  width: size50,
+                  padding: EdgeInsets.all(2),
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black54),
+                    borderRadius: BorderRadius.circular(5),
+                    color: lightGrey,
                   ),
-                ),
+                  child: Text(
+                    '',
+                    style: TextStyle(fontSize: 15, color: Colors.black54),
+                  ),
+                )
               ],
             ),
             SizedBox(height: 10),
@@ -173,13 +213,20 @@ class _InfoGoldLBNState extends State<InfoGoldLBN> {
                     style: text_style,
                   ),
                 ),
-                SizedBox(
+                Container(
                   width: size500,
-                  child: TextField(
-                    controller: ctrl.tienCam.value,
-                    decoration: inputDecoration,
+                  padding: EdgeInsets.all(2),
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black54),
+                    borderRadius: BorderRadius.circular(5),
+                    color: lightGrey,
                   ),
-                ),
+                  child: Text(
+                    '',
+                    style: TextStyle(fontSize: 15, color: Colors.black54),
+                  ),
+                )
               ],
             ),
             SizedBox(height: 10),
@@ -242,11 +289,18 @@ class _InfoGoldLBNState extends State<InfoGoldLBN> {
                     style: text_style,
                   ),
                 ),
-                SizedBox(
+                Container(
                   width: size70,
-                  child: TextField(
-                    controller: ctrl.ngayQuaHan.value,
-                    decoration: inputDecoration,
+                  padding: EdgeInsets.all(2),
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black54),
+                    borderRadius: BorderRadius.circular(5),
+                    color: lightGrey,
+                  ),
+                  child: Text(
+                    '',
+                    style: TextStyle(fontSize: 15, color: Colors.black54),
                   ),
                 ),
                 SizedBox(width: 10),

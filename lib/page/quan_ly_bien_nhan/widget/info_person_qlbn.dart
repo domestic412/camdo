@@ -1,19 +1,16 @@
 import 'package:camdo_test/constains/color.dart';
 import 'package:camdo_test/constains/size.dart';
 import 'package:camdo_test/constains/style.dart';
-import 'package:camdo_test/page/lap_bien_nhan/controller/controller_order.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
-class InfoPersonLBN extends StatefulWidget {
-  const InfoPersonLBN({super.key});
+class InfoPersonQLBN extends StatefulWidget {
+  const InfoPersonQLBN({super.key});
 
   @override
-  State<InfoPersonLBN> createState() => _InfoPersonLBNState();
+  State<InfoPersonQLBN> createState() => _InfoPersonQLBNState();
 }
 
-class _InfoPersonLBNState extends State<InfoPersonLBN> {
-  final ctrl = Get.put(OrderController());
+class _InfoPersonQLBNState extends State<InfoPersonQLBN> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -41,11 +38,20 @@ class _InfoPersonLBNState extends State<InfoPersonLBN> {
                             style: text_style,
                           ),
                         ),
-                        SizedBox(
+                        Container(
                           width: size300,
-                          child: TextField(
-                              controller: ctrl.hoTen.value,
-                              decoration: inputDecoration),
+                          padding: EdgeInsets.all(2),
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black54),
+                            borderRadius: BorderRadius.circular(5),
+                            color: lightGrey,
+                          ),
+                          child: Text(
+                            '',
+                            style:
+                                TextStyle(fontSize: 15, color: Colors.black54),
+                          ),
                         )
                       ],
                     ),
@@ -61,11 +67,20 @@ class _InfoPersonLBNState extends State<InfoPersonLBN> {
                             style: text_style,
                           ),
                         ),
-                        SizedBox(
+                        Container(
                           width: size300,
-                          child: TextField(
-                              controller: ctrl.cccd.value,
-                              decoration: inputDecoration),
+                          padding: EdgeInsets.all(2),
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black54),
+                            borderRadius: BorderRadius.circular(5),
+                            color: lightGrey,
+                          ),
+                          child: Text(
+                            '',
+                            style:
+                                TextStyle(fontSize: 15, color: Colors.black54),
+                          ),
                         )
                       ],
                     ),
@@ -88,11 +103,20 @@ class _InfoPersonLBNState extends State<InfoPersonLBN> {
                         SizedBox(
                           width: 20,
                         ),
-                        SizedBox(
+                        Container(
                           width: size300,
-                          child: TextField(
-                              controller: ctrl.sdt.value,
-                              decoration: inputDecoration),
+                          padding: EdgeInsets.all(2),
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black54),
+                            borderRadius: BorderRadius.circular(5),
+                            color: lightGrey,
+                          ),
+                          child: Text(
+                            '',
+                            style:
+                                TextStyle(fontSize: 15, color: Colors.black54),
+                          ),
                         )
                       ],
                     ),
@@ -111,11 +135,20 @@ class _InfoPersonLBNState extends State<InfoPersonLBN> {
                         SizedBox(
                           width: 20,
                         ),
-                        SizedBox(
+                        Container(
                           width: size300,
-                          child: TextField(
-                              controller: ctrl.ngayCap.value,
-                              decoration: inputDecoration),
+                          padding: EdgeInsets.all(2),
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black54),
+                            borderRadius: BorderRadius.circular(5),
+                            color: lightGrey,
+                          ),
+                          child: Text(
+                            '',
+                            style:
+                                TextStyle(fontSize: 15, color: Colors.black54),
+                          ),
                         )
                       ],
                     ),
@@ -133,11 +166,20 @@ class _InfoPersonLBNState extends State<InfoPersonLBN> {
                             style: text_style,
                           ),
                         ),
-                        SizedBox(
-                          width: 300,
-                          child: TextField(
-                              controller: ctrl.diaChi.value,
-                              decoration: inputDecoration),
+                        Container(
+                          width: size300,
+                          padding: EdgeInsets.all(2),
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black54),
+                            borderRadius: BorderRadius.circular(5),
+                            color: lightGrey,
+                          ),
+                          child: Text(
+                            '',
+                            style:
+                                TextStyle(fontSize: 15, color: Colors.black54),
+                          ),
                         )
                       ],
                     ),
@@ -151,11 +193,20 @@ class _InfoPersonLBNState extends State<InfoPersonLBN> {
                             style: text_style,
                           ),
                         ),
-                        SizedBox(
+                        Container(
                           width: size300,
-                          child: TextField(
-                              controller: ctrl.noiCap.value,
-                              decoration: inputDecoration),
+                          padding: EdgeInsets.all(2),
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black54),
+                            borderRadius: BorderRadius.circular(5),
+                            color: lightGrey,
+                          ),
+                          child: Text(
+                            '',
+                            style:
+                                TextStyle(fontSize: 15, color: Colors.black54),
+                          ),
                         )
                       ],
                     ),
